@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-26 09:50:17 "/>
+        <attribute name="created" value="U3R1ZGVudGU7U1RFTVNQQS0yNDsyMDIzLTA5LTI2OyIwOTo0Mjo1OCAiOzI3Mzk="/>
+        <attribute name="edited" value="U3R1ZGVudGU7U1RFTVNQQS0yNDsyMDIzLTA5LTI2OyIwOTo1MDoxNyAiOzE7Mjg0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Inserisci b&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="(a+b) &gt;= 5">
+                <then>
+                    <assign variable="c" expression="a*b"/>
+                    <output expression="&quot;Il risultato della moltiplicazione &#232; &quot; &amp; c" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="c" expression="a+b"/>
+                    <output expression="&quot;Il risultato della somma &#232; &quot; &amp; c" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

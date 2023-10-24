@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-11 08:54:18 "/>
+        <attribute name="created" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwODoyNzoyMyAiOzIxNTU="/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwODo1NDoxOCAiOzE7MjI2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <declare name="toggle" type="Integer" array="False" size=""/>
+            <declare name="pos" type="Integer" array="False" size=""/>
+            <declare name="neg" type="Integer" array="False" size=""/>
+            <assign variable="pos" expression="0"/>
+            <assign variable="neg" expression="0"/>
+            <do expression="numero != 0">
+                <assign variable="toggle" expression="Random(2)"/>
+                <if expression="toggle = 1">
+                    <then>
+                        <assign variable="numero" expression="Random(10)"/>
+                    </then>
+                    <else>
+                        <assign variable="numero" expression="Random(10)*-1"/>
+                    </else>
+                </if>
+                <if expression="numero == 0">
+                    <then/>
+                    <else>
+                        <if expression="numero &lt; 0">
+                            <then>
+                                <assign variable="neg" expression="neg + 1"/>
+                            </then>
+                            <else>
+                                <assign variable="pos" expression="pos +1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="numero == 0">
+                    <then/>
+                    <else>
+                        <output expression="&quot;il numero randomico &#232; &quot; &amp; numero" newline="True"/>
+                    </else>
+                </if>
+            </do>
+            <if expression="pos &lt; neg">
+                <then>
+                    <output expression="&quot;sono stati generati pi&#249; numeri negativi&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pos == neg">
+                        <then>
+                            <output expression="&quot;sono stati generati lo stesso numero di numeri positivi e negativi&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;sono stati generati pi&#249; numeri positivi&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

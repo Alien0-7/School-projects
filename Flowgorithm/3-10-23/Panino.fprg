@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="utente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-04 09:14:45 "/>
+        <attribute name="created" value="dXRlbnRlO1NURU1TUEEtMTQ7MjAyMy0xMC0wMzsiMTA6MTQ6MzUgIjsyNTI4"/>
+        <attribute name="edited" value="dXRlbnRlO1NURU1TUEEtMTQ7MjAyMy0xMC0wMzsiMTA6MTU6MzAgIjsyOzI2MzM="/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTA0OyIwOToxNDo0NSAiOzM7MjI2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="panino" type="Integer" array="False" size=""/>
+            <declare name="resto" type="Real" array="False" size=""/>
+            <output expression="&quot;Quale panino vuoi acquistare? ( 1 = prosciutto, 2 = pancetta) &quot;" newline="True"/>
+            <input variable="panino"/>
+            <while expression="!(panino == 1 OR panino == 2)">
+                <output expression="&quot;Non &#232; un valore corretto!&quot;" newline="True"/>
+                <output expression="&quot;Inserisci 1 per un panino al prosciutto 2 per un panino alla pancetta&quot;" newline="True"/>
+                <input variable="panino"/>
+            </while>
+            <if expression="panino == 1">
+                <then>
+                    <output expression="&quot;Devi pagare 1,50 &#8364;&quot;" newline="True"/>
+                    <assign variable="resto" expression="5-1.50"/>
+                    <output expression="&quot;Con una banconota da 5 &#8364; devi pagare &quot; &amp; resto &amp; &quot; &#8364;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Devi pagare 2,00 &#8364;&quot;" newline="True"/>
+                    <assign variable="resto" expression="5-2"/>
+                    <output expression="&quot;Con una banconota da 5 &#8364; devi pagare &quot; &amp; resto &amp; &quot; &#8364;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

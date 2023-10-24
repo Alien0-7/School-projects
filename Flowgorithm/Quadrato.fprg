@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-26 10:08:22 "/>
+        <attribute name="created" value="U3R1ZGVudGU7U1RFTVNQQS0yNDsyMDIzLTA5LTI2OyIwODowNzo1NyAiOzI3Mzg="/>
+        <attribute name="edited" value="U3R1ZGVudGU7U1RFTVNQQS0yNDsyMDIzLTA5LTI2OyIxMDowODoyMiAiOzI7MjgzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lato" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="end" type="String" array="False" size=""/>
+            <assign variable="end" expression="&quot;false&quot;"/>
+            <output expression="&quot;Inserire il valore del lato&quot;" newline="True"/>
+            <input variable="lato"/>
+            <while expression="lato &lt;= 0">
+                <output expression="&quot;Non puoi inserire un numero minore o uguale a 0&quot;" newline="True"/>
+                <output expression="&quot;Reinserisci il valore del lato&quot;" newline="True"/>
+                <input variable="lato"/>
+            </while>
+            <assign variable="area" expression="lato*lato"/>
+            <output expression="&quot;L'area del tuo quadrato &#232; &quot; &amp; area" newline="True"/>
+            <output expression="&quot;Vuoi continuare ad inserire i dati dei lati?&quot;" newline="True"/>
+            <input variable="end"/>
+            <while expression="end = &quot;true&quot; OR end = &quot;si&quot;">
+                <output expression="&quot;Inserire il nuovo valore del lato&quot;" newline="True"/>
+                <input variable="lato"/>
+                <while expression="lato &lt;= 0">
+                    <output expression="&quot;Non puoi inserire un numero minore o uguale a 0&quot;" newline="True"/>
+                    <output expression="&quot;Reinserisci il valore del lato&quot;" newline="True"/>
+                    <input variable="lato"/>
+                </while>
+                <assign variable="area" expression="lato*lato"/>
+                <output expression="&quot;L'area del tuo nuovo quadrato &#232; &quot; &amp; area" newline="True"/>
+                <output expression="&quot;Vuoi continuare ad inserire i dati dei lati?&quot;" newline="True"/>
+                <input variable="end"/>
+            </while>
+            <output expression="&quot;Arrivederci!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

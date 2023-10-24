@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 08:43:42 "/>
+        <attribute name="created" value="VXNlcjtBTElFTi1QQzsyMDIzLTA5LTI2OyIwODoyMzo1MiAiOzIxNjc="/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTAyOyIwODowODo1NyAiOzY7MjI3NA=="/>
+        <attribute name="edited" value="dXRlbnRlO1NURU1TUEEtMTQ7MjAyMy0xMC0wMzsiMDg6NDM6NDIgIjsxOzI2NDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="end" type="String" array="False" size=""/>
+            <assign variable="end" expression="&quot;si&quot;"/>
+            <while expression="end = &quot;si&quot; OR end = &quot;yes&quot; OR end = &quot;true&quot; OR end = &quot;y&quot; OR end = &quot;Y&quot;">
+                <output expression="&quot;inserisci il primo numero&quot;" newline="True"/>
+                <input variable="a"/>
+                <output expression="&quot;Inserisci il secondo numero&quot;" newline="True"/>
+                <input variable="b"/>
+                <while expression="b = a">
+                    <output expression="&quot;Il secondo numero &#232; uguale al primo&quot;" newline="True"/>
+                    <output expression="&quot;Reinsecisci il secondo numero&quot;" newline="True"/>
+                    <input variable="b"/>
+                </while>
+                <output expression="&quot;Inserisci il terzo numero&quot;" newline="True"/>
+                <input variable="c"/>
+                <while expression="c = b OR c = a">
+                    <if expression="c == b">
+                        <then>
+                            <output expression="&quot;Il terzo numero &#232; uguale al secondo numero&quot;" newline="True"/>
+                            <output expression="&quot;Reinsecisci il terzo numero&quot;" newline="True"/>
+                            <input variable="c"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Il terzo numero &#232; uguale al primo numero&quot;" newline="True"/>
+                            <output expression="&quot;Reinsecisci il terzo numero&quot;" newline="True"/>
+                            <input variable="c"/>
+                        </else>
+                    </if>
+                </while>
+                <if expression="(a-b)&gt;= 0 AND (a-c)&gt;= 0">
+                    <then>
+                        <if expression="(b-c)&gt;=0">
+                            <then>
+                                <output expression="&quot;il numero maggiore ed il numero minore sono corrispettivamente &quot; &amp; c &amp; &quot;; &quot; &amp; a" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;il numero maggiore ed il numero minore sono corrispettivamente &quot; &amp; b &amp; &quot;; &quot; &amp; a" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="(b-a) &gt;= 0 AND (b-c) &gt;= 0">
+                            <then>
+                                <if expression="(a-c) &gt;= 0">
+                                    <then>
+                                        <output expression="&quot;il numero maggiore ed il numero minore sono corrispettivamente &quot; &amp; c &amp; &quot;; &quot; &amp; b" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;il numero maggiore ed il numero minore sono corrispettivamente &quot; &amp; a &amp; &quot;; &quot; &amp; b" newline="True"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="(a-b)&gt;=0">
+                                    <then>
+                                        <output expression="&quot;il numero maggiore ed il numero minore sono corrispettivamente &quot; &amp; b &amp; &quot;; &quot; &amp; c" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;il numero maggiore ed il numero minore sono corrispettivamente &quot; &amp; a &amp; &quot;; &quot; &amp; c" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Vuoi continuare a immettere i numeri? (Y/N)&quot;" newline="True"/>
+                <input variable="end"/>
+                <while expression="!(end = &quot;no&quot; OR end = &quot;false&quot; OR end = &quot;si&quot; OR end = &quot;yes&quot; OR end = &quot;true&quot; OR end = &quot;Y&quot; OR end = &quot;y&quot;)">
+                    <output expression="&quot;Non esiste questa risposta per favore risponda con 'si' o 'no'&quot;" newline="True"/>
+                    <input variable="end"/>
+                </while>
+            </while>
+            <output expression="&quot;Arrivederci!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

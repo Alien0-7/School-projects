@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-11 09:28:34 "/>
+        <attribute name="created" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwOTowMTowOCAiOzIxNTE="/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwOTowMToxMCAiOzE7VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwODoxNToyMyAiO2VzUGVyQ2FzYTYuZnByZzs1OTQw"/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwOToyODozNCAiOzI7MjI2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nPC" type="Integer" array="False" size=""/>
+            <declare name="nUtente" type="Integer" array="False" size=""/>
+            <declare name="tentativi" type="Integer" array="False" size=""/>
+            <assign variable="tentativi" expression="0"/>
+            <do expression="nPC != nUtente">
+                <do expression="nPC == 0">
+                    <assign variable="nPC" expression="Random(101)"/>
+                </do>
+                <output expression="&quot;Inserisci un numero compreso tra 1 e 100&quot;" newline="True"/>
+                <input variable="nUtente"/>
+                <while expression="nUtente &gt; 100 or nUtente &lt; 1">
+                    <if expression="nUtente &gt; 100">
+                        <then>
+                            <output expression="&quot;numero troppo alto&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;numero troppo basso&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <output expression="&quot;Reinserisci un numero compreso tra 1 e 100&quot;" newline="True"/>
+                    <input variable="nUtente"/>
+                </while>
+                <assign variable="tentativi" expression="tentativi +1"/>
+            </do>
+            <output expression="&quot;bravo hai indovinato in &quot; &amp; tentativi &amp; &quot; tentativo/i&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

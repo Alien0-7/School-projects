@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-04 09:24:40 "/>
+        <attribute name="created" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTA0OyIwOToxNToxMCAiOzIxNTE="/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTA0OyIwOToyNDo0MCAiOzE7MjI2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mask" type="Integer" array="False" size=""/>
+            <declare name="costo" type="Real" array="False" size=""/>
+            <output expression="&quot;Quante mascherine vuoi comprare (2,50 &#8364; l'una)&quot;" newline="True"/>
+            <input variable="mask"/>
+            <assign variable="costo" expression="mask * 2.5"/>
+            <if expression="mask &gt;= 10">
+                <then>
+                    <if expression="mask &gt;= 50">
+                        <then>
+                            <assign variable="costo" expression="costo - 20% costo"/>
+                            <output expression="mask &amp; &quot; mascherine costano &quot; &amp; costo" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="costo" expression="costo - 10% costo"/>
+                            <output expression="mask &amp; &quot; mascherine costano &quot; &amp; costo" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="mask == 1">
+                        <then>
+                            <output expression="mask &amp; &quot; mascherina costa &quot; &amp; costo" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="mask &amp; &quot; mascherine costano &quot; &amp; costo" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

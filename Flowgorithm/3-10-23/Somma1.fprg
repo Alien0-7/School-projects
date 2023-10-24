@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-11 09:36:21 "/>
+        <attribute name="created" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwOToyODozNiAiOzIxNjE="/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwOTozNjoyMSAiOzI7MjI2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="somma" type="Integer" array="False" size=""/>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <assign variable="n2" expression="0"/>
+            <assign variable="somma" expression="0"/>
+            <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="n2" start="1" end="n" direction="inc" step="1">
+                <assign variable="somma" expression="somma + n2"/>
+            </for>
+            <output expression="&quot;la somma dei numeri compresi tra 1 e &quot; &amp; n &amp; &quot; &#232; di &quot; &amp; somma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

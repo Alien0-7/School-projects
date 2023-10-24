@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-11 08:59:44 "/>
+        <attribute name="created" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwODo1NDo0NSAiOzIxNTk="/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwODo1OTo0NCAiOzE7MjI3MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="somma" type="Integer" array="False" size=""/>
+            <declare name="nInseriti" type="Integer" array="False" size=""/>
+            <assign variable="nInseriti" expression="0"/>
+            <assign variable="somma" expression="0"/>
+            <do expression="!(somma &gt;= 20)">
+                <output expression="&quot;Inserire un numero&quot;" newline="True"/>
+                <input variable="n"/>
+                <assign variable="somma" expression="somma + n"/>
+                <assign variable="nInseriti" expression="nInseriti + 1"/>
+            </do>
+            <output expression="&quot;Hai inserito &quot; &amp; nInseriti &amp; &quot; numero/i&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
