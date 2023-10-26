@@ -1,6 +1,17 @@
+/*
+	Elia Morari 3AI
+	Esercizi 27/10/23
+	Repository project https://github.com/Alien0-7/School-projects
+
+ */
+
 import java.util.Scanner;
 
 public class Esercizio4 {
+
+	/*
+		inserimento di un voto con semplice giudizio
+	 */
 
 	public static void main(String[] args) {
 		Scanner tastiera = new Scanner(System.in);

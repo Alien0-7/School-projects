@@ -1,6 +1,18 @@
+/*
+	Elia Morari 3AI
+	Esercizi 27/10/23
+	Repository project https://github.com/Alien0-7/School-projects
+
+ */
+
 import java.util.Scanner;
 
 public class Esercizio5 {
+
+	/*
+		Inserimento dell'età per visualizzare il costo del biglietto del treno Milano-Roma
+		in base allo sconto applicato per l'età
+	 */
 
 	public static void main(String[] args) {
 		Scanner tastiera = new Scanner(System.in);

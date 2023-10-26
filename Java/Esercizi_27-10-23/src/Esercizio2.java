@@ -1,6 +1,18 @@
+/*
+	Elia Morari 3AI
+	Esercizi 27/10/23
+	Repository project https://github.com/Alien0-7/School-projects
+
+ */
+
 import java.util.Scanner;
 
 public class Esercizio2 {
+
+	/*
+		Inserimento di un numero per ordinare un panino
+		controllando che il numero sia giusto
+	 */
 
 	public static void main(String[] args) {
 		Scanner tastiera = new Scanner(System.in);

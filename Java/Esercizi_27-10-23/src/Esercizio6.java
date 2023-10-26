@@ -1,6 +1,18 @@
+/*
+	Elia Morari 3AI
+	Esercizi 27/10/23
+	Repository project https://github.com/Alien0-7/School-projects
+
+ */
+
 import java.util.Scanner;
 
 public class Esercizio6 {
+
+	/*
+		Inserimento dell'anno per sapere se è un anno bisestile o no
+		in base all'essere divisibile per certi numeri
+	 */
 
 	public static void main(String[] args) {
 		Scanner tastiera = new Scanner(System.in);
