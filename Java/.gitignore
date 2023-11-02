@@ -1,1 +1,6 @@
+## cartelle
+/out/
 /.metadata/
+/.idea/
+## files
+*.iml

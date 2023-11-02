@@ -23,10 +23,10 @@ public class Esercizio1 {
 		double b = tastiera.nextDouble();
 		double x;
 		
-		if (a == 0) {
-			System.out.println("L'espressione é impossibile!");
-		} else if  (b == 0) {
+		if (a == 0 || b == 0) {
 			System.out.println("L'espressione é indeterminata!");
+		} else if  (a == 0) {
+			System.out.println("L'espressione é impossibile!");
 		} else {
 			x = (-b)/a;
 			System.out.println("Il valore di x é " + x);
