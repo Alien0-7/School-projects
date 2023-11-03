@@ -19,7 +19,7 @@ public class Tabellina {
         int n; //Numero che viene visualizzata la sua tabellina
         int i; //Contatore ciclo FOR
 
-        System.out.print("Inserisci un numero per visualizzare la sua tanellina: ");
+        System.out.print("Inserisci un numero per visualizzare la sua tabellina: ");
         n = keyboard.nextInt();
 
         while (n > 10 || n < 1) {
