@@ -7,7 +7,7 @@
  *
  * Descrizione
  * Visualizzare la tabellina del numero n inserito dall'input
- *
+ * e controllare se n è un valore non valido (maggiore di 10 o minore di 1)
  * 
  */
 import java.util.Scanner;
@@ -21,6 +21,12 @@ public class Tabellina {
 
         System.out.print("Inserisci un numero per visualizzare la sua tanellina: ");
         n = keyboard.nextInt();
+
+        while (n > 10 || n < 1) {
+        	System.out.println("Numero non valido!");
+        	System.out.print("Reinserire il numero: ");
+        	n = keyboard.nextInt();
+        }
 
         for (i = 1; i <= 10; i++) {
             System.out.println( n + " x " + i + " = " + n*i);
