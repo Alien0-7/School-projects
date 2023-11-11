@@ -1,6 +1,41 @@
-## cartelle
-/out/
-.metadata/
+### IntelliJ IDEA ###
+## folders ##
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 .idea/
-## files
+
+## files ##
 *.iml
+
+### Eclipse ###
+## folders ##
+.metadata/
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+## files ##
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+## folders ##
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+## folders ##
+.vscode/
+
+### Mac OS ###
+## files ##
+.DS_Store
