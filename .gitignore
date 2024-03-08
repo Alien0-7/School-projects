@@ -1,4 +1,4 @@
-### JetBrains ###
+##### JetBrains #####
 */.idea/
 
 ### IntelliJ IDEA ###
@@ -12,3 +12,9 @@
 ## folders ##
 */__pycache__/
 
+
+
+
+##### GitHub #####
+## files ##
+*/.gitignore
