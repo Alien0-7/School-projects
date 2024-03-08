@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="utente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-04 08:37:46 "/>
+        <attribute name="created" value="dXRlbnRlO1NURU1TUEEtMTQ7MjAyMy0xMC0wMzsiMDg6NTk6NTkgIjsyNTUw"/>
+        <attribute name="edited" value="dXRlbnRlO1NURU1TUEEtMTQ7MjAyMy0xMC0wMzsiMDk6MDA6MDUgIjsxO3V0ZW50ZTtTVEVNU1BBLTE0OzIwMjMtMDktMjk7IjA4OjQ4OjQ4ICI7cHJvdmEgYmVuemEuZnByZzs2OTA1"/>
+        <attribute name="edited" value="dXRlbnRlO1NURU1TUEEtMTQ7MjAyMy0xMC0wMzsiMTA6MDM6MDQgIjsxNDsyNjgy"/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTA0OyIwODozNzo0NiAiOzE7MjI3MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="voto1" type="Real" array="False" size=""/>
+            <declare name="voto2" type="Real" array="False" size=""/>
+            <declare name="votodec" type="String" array="False" size=""/>
+            <declare name="votodec1" type="String" array="False" size=""/>
+            <output expression="&quot;inserisci il voto&quot;" newline="True"/>
+            <input variable="voto1"/>
+            <while expression="voto1 &gt; 10 OR voto1 &lt; 1">
+                <output expression="&quot;il voto non &#232; valido&quot;" newline="True"/>
+                <output expression="&quot;Reinserisci il voto&quot;" newline="True"/>
+                <input variable="voto1"/>
+            </while>
+            <if expression="voto1 = 10">
+                <then/>
+                <else>
+                    <output expression="&quot;Vuoi aggiungere la parte decimale del voto?&quot;" newline="True"/>
+                    <input variable="votodec1"/>
+                    <while expression="!(votodec1 = &quot;si&quot; or votodec1 = &quot;no&quot;)">
+                        <output expression="&quot;non esiste questa affermazione!&quot;" newline="True"/>
+                        <output expression="&quot;Reinserisci se vuoi aggiungere la parte decimale del voto&quot;" newline="True"/>
+                        <input variable="votodec1"/>
+                    </while>
+                    <if expression="votodec1 = &quot;si&quot;">
+                        <then>
+                            <output expression="&quot;Inserisci quale voto decimale vuoi aggiungere(un'quarto, mezzo, tre quarti)&quot;" newline="True"/>
+                            <input variable="votodec"/>
+                            <while expression="!(votodec = &quot;un'quarto&quot; or votodec = &quot;mezzo&quot; or votodec = &quot;tre quarti&quot;)">
+                                <output expression="&quot;Reinserisci il voto decimale&quot;" newline="True"/>
+                                <input variable="votodec"/>
+                            </while>
+                            <if expression="votodec = &quot;un'quarto&quot;">
+                                <then>
+                                    <assign variable="voto1" expression="voto1 + 0.25"/>
+                                </then>
+                                <else>
+                                    <if expression="votodec = &quot;mezzo&quot;">
+                                        <then>
+                                            <assign variable="voto1" expression="voto1+0.5"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="voto1" expression="voto1 + 0.75"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Il voto inserito &#232;: &quot; &amp; voto1" newline="True"/>
+            <if expression="voto1 &lt; 4">
+                <then>
+                    <output expression="&quot;Il voto &#232; gravemente insufficiente&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="voto1 &lt;= 5">
+                        <then>
+                            <output expression="&quot;Il voto &#232; insufficiente&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="voto1 &lt; 8">
+                                <then>
+                                    <output expression="&quot;Il voto &#232; sufficiente&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Il voto &#232; ottimo&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

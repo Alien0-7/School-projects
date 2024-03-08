@@ -1,0 +1,14 @@
+### JetBrains ###
+*/.idea/
+
+### IntelliJ IDEA ###
+## folders ##
+*/out/
+
+## files ##
+*/*.iml
+
+### PyCharm ###
+## folders ##
+*/__pycache__/
+

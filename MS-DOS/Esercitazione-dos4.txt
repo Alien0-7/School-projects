@@ -1,0 +1,132 @@
+C:\Users\Studente\Desktop\Esercizi-dos>cd Appunti/Lezione-1
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-1>help dir> help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-1>help cd>> help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-1>cd ../Lezione-2
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-2>help mkdir> help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-2>help echo>> help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-2>help type>> help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-2>help more>> help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-2>cd ../Lezione-3
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-3>help copy> help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-3>help xcopy>> help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti\Lezione-3>copy help.txt + ..\Lezione-1\help.txt + ..\Lezione-2\help.txt
+ ..\..\Classe\3AI\Appunti.txt
+help.txt
+..\Lezione-1\help.txt
+..\Lezione-2\help.txt
+        1 file copiati.
+
+C:\Users\Studente\Desktop\Esercizi-dos> copy Appunti .
+
+C:\Users\Studente\Desktop\Esercizi-dos> more help.txt
+
+Copia uno o più file in un'altra posizione.
+
+COPY [/D] [/V] [/N] [/Y] [/-Y] [/Z] [/L] [/A | /B] origine [/A | /B]
+     [+ origine [/A | /B] [+ ...]] [destinazione [/A | /B]]
+
+  origine       Indica i file da copiare.
+  /A            Indica un file di testo ASCII.
+  /B            Indica un file binario.
+  /D            Consente la creazione del file di destinazione come
+                decrittografato destinazione  specifica la directory
+                e/o il nome dei nuovi file.
+  /V            Verifica che i nuovi file siano stati copiati correttamente.
+  /N            Utilizza nomi file brevi, se disponibili, durante
+                la copia di file con nome lungo.
+  /Y            Non chiede la conferma prima di sovrascrivere
+                un file di destinazione esistente.
+  /-Y           Chiede la conferma prima di sovrascrivere
+                un file di destinazione esistente.
+  /Z            Copia i file dalla rete in modalità riavviabile.
+  /L            Se l'origine è un collegamento simbolico, copia nella
+                Destinazione il collegamento anziché il file rappresentato
+                dal collegamento.
+
+L'opzione /Y potrebbe essere preimpostata nella variabile di ambiente COPYCMD.
+Questa operazione può essere annullata inserendo /-Y nella riga di comando.
+Per impostazione predefinita la conferma viene richiesta a meno che il comando
+COPY non venga eseguito da uno script di tipo batch.
+
+Per concatenare i file, specificare un solo file di destinazione
+e più file di origine (utilizzando caratteri jolly o il formato
+file1+file2+file3).
+Copia file e alberi di directory.
+
+XCOPY origine [destination] [/A | /M] [/D[:date]] [/P] [/S [/E]] [/V] [/W]
+                           [/C] [/I] [/Q] [/F] [/L] [/G] [/H] [/R] [/T] [/U]
+                           [/K] [/N] [/O] [/X] [/Y] [/-Y] [/Z] [/B] [/J]
+                           [/EXCLUDE:file1[+file2][+file3]...] [/COMPRESS]
+
+  origine      Specifica i/l file da copiare.
+  destinazione  Specifica il percorso e/o il nome dei nuovi file.
+  /A           Copia solo i file con l'attributo di archivio impostato,
+               senza modificare l'attributo.
+  /M           Copia solo i file con l'attributo di archivio impostato,
+               e disattiva l'attributo di archivio.
+  /D:m-d-y     Copia i file modificati in o dopo una data specificata.
+              Se non Þ specificata alcuna data, copia solo i file la cui
+               ora di origine Þ pi¨ recente rispetto all'ora di destinazione.
+  /EXCLUDE:file1[+file2][+file3]...
+               Specifica un elenco di file contenenti stringhe.  Le stringhe
+                devono essere riportate su righe distinte nei file.  Se una o pi¨
+               stringhe corrispondono a una qualsiasi parte del percorso assoluto di un file da
+               copiare, il file verrÓ escluso dalla copia.  Ad
+               esempio, specificando una stringa quale \obj\ o .obj verranno esclusi
+               rispettivamente tutti i file nella directory obj o tutti i file con estensione
+               .obj.
+  /P            Chiede conferma prima di creare ogni file di destinazione.
+  /S           Copia directory e sottodirectory, ad eccezione di quelle vuote.
+  /E           Copia directory e sottodirectory, incluse quelle vuote.
+                Analogo a /S /E. Questa opzione pu‗ essere utilizzata per modificare /T.
+  /V            Verifica le dimensioni di ogni nuovo file.
+  /W           Richiede all'utente di premere un tasto prima di iniziare la copia.
+  /C           Continua la copia anche in caso di errori.
+  /I           Se la destinazione non esiste e la copia riguarda pi¨ file,
+              verrÓ presupposto che la destinazione sia una directory.
+  /I-           Se la destinazione non esiste e la copia riguarda un solo file,
+              verrÓ presupposto che la destinazione sia un file.
+ /Q           Non visualizza i nomi dei file durante la copia.
+  /F           Visualizza i nomi completi dei file di origine e destinazione durante la copia.
+  /L           Visualizza i file da copiare.
+  /G           Consente la copia dei file crittografati in una destinazione che
+               non supporta la crittografia.
+  /H           Copia anche i file nascosti e di sistema.
+  /R            Sovrascrive i file di sola lettura.
+  /T           Crea la struttura di directory senza copiare i file. Non
+               include le directory o le sottodirectory vuote. /T /E include
+               le directory e le sottodirectory vuote.
+   /U           Copia solo i file giÓ presenti nella destinazione.
+  /K           Copia gli attributi. Il comando normale Xcopy senza opzioni reimposta gli attributi di sola lettura.
+  /N           Copia utilizzando i nomi brevi generati.
+  /O           Copia le informazioni relative alla proprietÓ dei file e informazioni ACL.
+  /X           Copia le impostazioni di controllo dei file (implica /O).
+  /Y           Non chiede conferma prima di sovrascrivere un
+               file di destinazione esistente.
+  /-Y          Chiede conferma prima di sovrascrivere un
+               file di destinazione esistente.
+  /Z           Copia i file di rete in modalitÓ riavviabile.
+  /B           Copia il collegamento simbolico anzichÚ la destinazione del collegamento.
+  /J           Esegue la copia utilizzando I/O senza buffer. Consigliato per file molto grandi.
+  /COMPRESS    Richiede la compressione di rete durante il trasferimento di file laddove
+               Þ applicabile.
+  /SPARSE      Mantiene lo stato sparse durante la copia di un file di tipo sparse.
+
+C:\Users\Studente\Desktop\Esercizi-dos>cd Appunti
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti>copy ..\Classe\3AI Lezione-4
+..\Classe\3AI\Appunti.txt
+
+
+

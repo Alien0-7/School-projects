@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-13 12:17:57 "/>
+        <attribute name="created" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwODoxNToyMyAiOzIxNTI="/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTExOyIwODoyNjo1MiAiOzE7MjI2NA=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7UEMtMTgtRElTRUdOTzsyMDIzLTEwLTEzOyIxMjoxNzo1NyAiOzE7MzAwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <declare name="moltiplicatore" type="Integer" array="False" size=""/>
+            <do expression="numero &gt; 10 or numero &lt; 1">
+                <output expression="&quot;Inserire un numero compreso tra 1 e 10 per visualizzare la sua tabellina&quot;" newline="True"/>
+                <input variable="numero"/>
+                <if expression="numero &gt; 10 or numero &lt; 1">
+                    <then>
+                        <output expression="&quot;Numero invalido&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <for variable="moltiplicatore" start="1" end="10" direction="inc" step="1">
+                <output expression="numero &amp; &quot; x &quot; &amp; moltiplicatore &amp; &quot; = &quot; &amp; numero*moltiplicatore" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

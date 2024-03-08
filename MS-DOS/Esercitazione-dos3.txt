@@ -1,0 +1,29 @@
+C:\Users\Studente\Desktop\Esercizi-dos> ren Giochi Comandi
+
+C:\Users\Studente\Desktop\Esercizi-dos> cd Comandi
+
+C:\Users\Studente\Desktop\Esercizi-dos\Comandi> ren Solitario Creazione-file
+
+C:\Users\Studente\Desktop\Esercizi-dos\Comandi> ren Monopoli Visualizzazione-file
+
+C:\Users\Studente\Desktop\Esercizi-dos\Comandi> ren Scacchi Generali
+
+C:\Users\Studente\Desktop\Esercizi-dos\Comandi>echo Data:%data% Ora:%time% > help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos\Comandi>echo Data:%date% Ora:%time% > help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos\Comandi>help dir >> help.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos>move istruzioni.txt Comandi
+        1 file spostato/i.
+
+C:\Users\Studente\Desktop\Esercizi-dos>copy help.txt + Prova.txt + testo.txt guida.txt
+help.txt
+Prova.txt
+testo.txt
+        1 file copiati.
+
+C:\Users\Studente\Desktop\Esercizi-dos>move guida.txt .
+        1 file spostato/i.
+
+C:\Users\Studente\Desktop\Esercizi-dos>

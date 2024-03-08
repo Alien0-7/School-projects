@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="utente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-17 09:34:09 "/>
+        <attribute name="created" value="dXRlbnRlO1NURU1QU0E7MjAyMy0xMC0xNzsiMDk6Mjc6MjcgIjsyNDAw"/>
+        <attribute name="edited" value="dXRlbnRlO1NURU1QU0E7MjAyMy0xMC0xNzsiMDk6MzQ6MDkgIjsyOzI1MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Elia Morari 3AI"/>
+            <declare name="kg" type="Integer" array="False" size=""/>
+            <declare name="costo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il peso di una valigia&quot;" newline="True"/>
+            <input variable="kg"/>
+            <while expression="kg &lt;= 0">
+                <output expression="&quot;Il peso non pu&#242; essere minore o uguale a 0&quot;" newline="True"/>
+                <output expression="&quot;Reinserire il peso della valigia&quot;" newline="True"/>
+                <input variable="kg"/>
+            </while>
+            <if expression="kg &lt;= 10">
+                <then>
+                    <assign variable="costo" expression="10"/>
+                </then>
+                <else>
+                    <assign variable="costo" expression="( ( kg - 10 ) * 2 ) + 10"/>
+                </else>
+            </if>
+            <output expression="&quot;Il costo del trasporto &#232; di &quot; &amp; costo &amp; &quot;&#8364;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,259 @@
+Microsoft Windows [Versione 10.0.22631.3007]
+(c) Microsoft Corporation. Tutti i diritti riservati.
+
+C:\Users\Studente>dir
+ Il volume nell'unità C è Windows
+ Numero di serie del volume: 3E3E-9CC0
+
+ Directory di C:\Users\Studente
+
+17/01/2024  13:08    <DIR>          .
+16/12/2023  12:50    <DIR>          ..
+16/01/2024  08:14    <DIR>          .cache
+16/01/2024  08:14    <DIR>          .eclipse
+20/01/2024  09:08    <DIR>          .p2
+17/01/2024  11:18    <DIR>          .vscode
+18/01/2024  09:43    <DIR>          3AI
+17/01/2024  13:09               190 ciao.java
+16/12/2023  12:10    <DIR>          Contacts
+20/01/2024  10:18    <DIR>          Desktop
+19/01/2024  10:17    <DIR>          Documents
+20/01/2024  10:37    <DIR>          Downloads
+16/01/2024  08:11    <DIR>          eclipse
+16/12/2023  12:10    <DIR>          Favorites
+16/12/2023  12:10    <DIR>          Links
+16/12/2023  12:10    <DIR>          Music
+16/12/2023  12:12    <DIR>          OneDrive
+19/01/2024  11:28    <DIR>          Pictures
+16/12/2023  12:10    <DIR>          Saved Games
+16/12/2023  12:28    <DIR>          Searches
+22/12/2023  08:15    <DIR>          Videos
+               1 File            190 byte
+              20 Directory  418.811.985.920 byte disponibili
+
+C:\Users\Studente>cd Desktop
+
+C:\Users\Studente\Desktop>mkdir Esercizi-dos
+
+C:\Users\Studente\Desktop>mkdir Appunti Classe Linguaggi Giochi
+
+C:\Users\Studente\Desktop>dir
+ Il volume nell'unità C è Windows
+ Numero di serie del volume: 3E3E-9CC0
+
+ Directory di C:\Users\Studente\Desktop
+
+20/01/2024  10:38    <DIR>          .
+17/01/2024  13:08    <DIR>          ..
+20/01/2024  10:38    <DIR>          Appunti
+20/01/2024  10:38    <DIR>          Classe
+16/01/2024  08:11             1.101 Eclipse IDE for Java Developers - 2023-12.lnk
+20/01/2024  10:37    <DIR>          Esercizi-dos
+20/01/2024  10:38    <DIR>          Giochi
+20/01/2024  10:38    <DIR>          Linguaggi
+20/01/2024  10:18    <DIR>          portfolio
+18/01/2024  06:11             1.672 tris.java
+17/01/2024  11:17             1.417 Visual Studio Code.lnk
+               3 File          4.190 byte
+               8 Directory  418.811.703.296 byte disponibili
+
+C:\Users\Studente\Desktop>rmdir
+Sintassi del comando errata.
+
+C:\Users\Studente\Desktop>rmdir Appunti Classe Linguaggi Giochi
+
+C:\Users\Studente\Desktop>cd Esercizi-dos
+
+C:\Users\Studente\Desktop\Esercizi-dos>mkdir Appunti Classe Linguaggi Giochi
+
+C:\Users\Studente\Desktop\Esercizi-dos>cd Appunti
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti>mkdir Lezione-1 Lezione-2 Lezione-3
+
+C:\Users\Studente\Desktop\Esercizi-dos\Appunti>cd ../Classe
+
+C:\Users\Studente\Desktop\Esercizi-dos\Classe>mkdir 3AI 4AI 5AI
+
+C:\Users\Studente\Desktop\Esercizi-dos\Classe>cd ../Linguaggi
+
+C:\Users\Studente\Desktop\Esercizi-dos\Linguaggi>mkdir MS-DOS JAVA HTML
+
+C:\Users\Studente\Desktop\Esercizi-dos\Linguaggi>cd ../Giochi
+
+C:\Users\Studente\Desktop\Esercizi-dos\Giochi>mkdir Solitario Monopoli Scacchi
+
+C:\Users\Studente\Desktop\Esercizi-dos\Giochi>cd ..
+
+C:\Users\Studente\Desktop\Esercizi-dos>nul>prova.txt
+"nul" non è riconosciuto come comando interno o esterno,
+ un programma eseguibile o un file batch.
+
+C:\Users\Studente\Desktop\Esercizi-dos>echo nul>prova.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos>echo help dir>istruzioni.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos>echo ciao mondo>testo.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos>echo ciao mondo>testo.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos>echo ciao mondo>testo.txt
+
+C:\Users\Studente\Desktop\Esercizi-dos>openfiles testo.txt
+ERRORE: Sintassi non valida.
+Digitare "OPENFILES /?" per informazioni sull'utilizzo.
+
+C:\Users\Studente\Desktop\Esercizi-dos>openfiles /?
+
+OPENFILES /parametro [argomenti]
+
+Descrizione:
+    Consente a un amministratore di elencare o disconnettere file e cartelle
+    che sono stati aperti in un sistema.
+
+Elenco parametri:
+    /Disconnect      Disconnette uno o più file aperti.
+
+    /Query           Visualizza i file aperti localmente o
+                     contenuti nelle cartelle
+                     condivise.
+
+    /Local           Attiva/disattiva la visualizzazione dei file
+                     aperti localmente.
+
+    /?               Visualizza questo messaggio della Guida.
+
+Esempi:
+    OPENFILES /Disconnect /?
+    OPENFILES /Query /?
+    OPENFILES /Local /?
+
+C:\Users\Studente\Desktop\Esercizi-dos>openfiles testo.txt
+ERRORE: Sintassi non valida.
+Digitare "OPENFILES /?" per informazioni sull'utilizzo.
+
+C:\Users\Studente\Desktop\Esercizi-dos>openfiles /Local /?
+
+OPENFILES /Local [ ON | OFF ]
+
+Descrizione:
+    Consente a un amministratore di attivare o disattivare il
+    flag globale di sistema
+    "maintain objects list" che tiene traccia degli handle di
+    file locali. Le modifiche
+    apportate mediante l'utilizzo di questa opzione avranno
+    effetto solo dopo il riavvio del
+    sistema.
+
+    Nota: abilitando questa opzione vengono ridotte le prestazioni del sistema.
+
+Elenco parametri:
+    /?                     Visualizza questo messaggio della Guida.
+
+Esempi:
+    OPENFILES /Local /?
+    OPENFILES /Local
+    OPENFILES /Local ON
+    OPENFILES /Local OFF
+
+C:\Users\Studente\Desktop\Esercizi-dos>openfiles /Local
+ERRORE: l'utente acceduto non dispone di privilegi amministrativi.
+
+C:\Users\Studente\Desktop\Esercizi-dos>copy con testo.txt
+Ciao MOndo
+Sovrascrivere testo.txt? (Sì/No/Tutti): si
+Ciao Mondo
+Ciao Mondo
+Ciao Mondo
+        1 file copiati.
+
+C:\Users\Studente\Desktop\Esercizi-dos>copy con elenco.txt
+INDICE DEI COMANDI DOS
+ASSOC Visualizza o modifica le associazioni alle estensioni dei file.
+ATTRIB Visualizza o modifica gli attributi del file.
+BREAK Attiva o disattiva il controllo esteso di CTRL+C.
+BCDEDIT Imposta le proprietà nel database di avvio per il controllo del
+CACLS Visualizza o modifica gli elenchi di controllo di accesso
+CALL Richiama un programma batch da un altro.
+CD Visualizza il nome della directory corrente o consente
+CHCP Visualizza o imposta il numero di tabella codici attiva.
+CHDIR Visualizza il nome della directory corrente o consente
+CHKDSK Controlla un disco e visualizza il relativo
+CHKNTFS Visualizza o modifica la verifica di un disco durante l'avvio.
+CLS Cancella lo schermo.
+CMD Avvia una nuova istanza dell'interprete dei comandi di Windows.
+COLOR Imposta i colori predefiniti in primo piano e dello sfondo
+COMP Confronta il contenuto di due file o di due gruppi di file.
+COMPACT Visualizza o modifica la compressione di file su
+CONVERT Converte volumi FAT in NTFS. Non è possibile convertire
+COPY Copia uno o più file in un'altra posizione.
+DATE Visualizza o imposta la data.
+DEL Elimina uno o più file.
+DIR Visualizza un elenco di file e sottodirectory in una directory.
+DISKCOMP Confronta il contenuto di due dischi floppy.
+DISKCOPY Copia il contenuto di un disco floppy su un altro.
+DISKPART Visualizza o configura le proprietà di Partizione disco.
+DOSKEY Modifica righe di comando, richiama comandi di Windows,
+DRIVERQUERY Visualizza stato e proprietà del driver di dispositivo corrente.
+ECHO Visualizza messaggi o attiva e disattiva la ripetizione
+ENDLOCAL Termina la localizzazione di modifiche di ambiente in un
+ERASE Elimina uno o più file.
+EXIT Termina il programma CMD.EXE (interprete dei comandi).
+FC Confronta due file o gruppi di file e ne visualizza le
+FIND Ricerca una stringa di testo in uno o più file.
+FINDSTR Ricerca stringhe nei file.
+FOR Esegue un comando specificato per ogni file in un gruppo
+FORMAT Formatta un disco per l'utilizzo con Windows.
+FSUTIL Visualizza o configura le proprietà del File System.
+FTYPE Visualizza o modifica i tipi di file utilizzati nelle
+GOTO Dirige l'interprete dei comandi di Windows a una riga con
+GPRESULT Visualizza le informazioni relative al Criteri
+GRAFTABL Abilita Windows alla visualizzazione di un set di
+HELP Fornisce informazioni di aiuto per i comandi di Windows.
+ICACLS Visualizza, modifica ed esegue il backup o il ripristino
+IF Esegue un'elaborazione condizionale in un programma batch.
+LABEL Crea, cambia o elimina l'etichetta di volume di un disco.
+MD Crea una directory.
+MKDIR Crea una directory.
+MKLINK Crea collegamenti simbolici e reali
+MODE Configura un dispositivo di sistema.
+MORE Visualizza l'output una schermata alla volta.
+MOVE Sposta uno o più file da una directory a un'altra
+OPENFILES Visualizza i file aperti dagli utenti remoti per una
+PATH Visualizza o imposta un percorso di ricerca per file eseguibili.
+PAUSE Sospende l'elaborazione di un file batch e visualizza
+POPD Ripristina il valore precedente della directory corrente
+PRINT Stampa un file di testo.
+PROMPT Cambia il prompt dei comandi di Windows.
+PUSHD Salva la directory corrente e poi la cambia.
+RD Elimina una directory.
+RECOVER Recupera le informazioni leggibili da un disco danneggiato
+REM Registra commenti (note) in file batch o CONFIG.SYS.
+REN Rinomina uno o più file.
+RENAME Rinomina uno o più file.
+REPLACE Sostituisce i file.
+RMDIR Elimina una directory.
+ROBOCOPY Utilità avanzata per la copia di file e alberi di directory
+SET Visualizza, imposta o elimina variabili di ambiente di Windows.
+SETLOCAL Inizia la localizzazione di modifiche di ambiente in un
+SC Visualizza o configura i servizi (processi in background).
+SCHTASKS Pianifica comandi e programmi da eseguire su un
+SHIFT Modifica la posizione di parametri sostituibili in file batch.
+SHUTDOWN Consente il corretto arresto del computer in
+SORT Ordina l'input.
+START Avvia una finestra separata per l'esecuzione del
+SUBST Associa il percorso a una lettera di unità.
+SYSTEMINFO Visualizza la configurazione e le proprietà specifiche
+TASKLIST Visualizza tutte le attività in esecuzione inclusi i servizi.
+TASKKILL Interrompe o arresta un processo o un'applicazione
+TIME Visualizza o imposta l'ora del sistema.
+TITLE Imposta il titolo della finestra per una sessione CMD.EXE.
+TREE Visualizza graficamente la struttura di directory di un'unità o
+TYPE Visualizza il contenuto di un file di testo.
+VER Visualizza la versione di Windows.
+VERIFY Indica se effettuare o meno la verifica della corretta scrittura
+VOL Visualizza l'etichetta di volume e il numero di serie del disco.
+XCOPY Copia file e alberi di directory.
+WMIC Visualizza le informazioni relative a WMI all'interno
+        1 file copiati.
+
+C:\Users\Studente\Desktop\Esercizi-dos>

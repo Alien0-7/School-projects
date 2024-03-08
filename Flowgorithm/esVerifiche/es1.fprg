@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="utente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-17 09:47:59 "/>
+        <attribute name="created" value="dXRlbnRlO1NURU1QU0E7MjAyMy0xMC0xNzsiMDk6MTQ6NTIgIjsyMzk0"/>
+        <attribute name="edited" value="dXRlbnRlO1NURU1QU0E7MjAyMy0xMC0xNzsiMDk6NDc6NTkgIjsyOzI1MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Elia Morari 3AI"/>
+            <declare name="votoScritto" type="Integer" array="False" size=""/>
+            <declare name="votoOrale" type="Integer" array="False" size=""/>
+            <declare name="votoPratico" type="Integer" array="False" size=""/>
+            <declare name="media" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il voto scritto&quot;" newline="True"/>
+            <input variable="votoScritto"/>
+            <while expression="votoScritto &gt; 10 or votoScritto &lt; 1">
+                <output expression="&quot;Voto non corretto&quot;" newline="True"/>
+                <output expression="&quot;Il voto deve essere compreso tra 1 e 10&quot;" newline="True"/>
+                <input variable="votoScritto"/>
+            </while>
+            <output expression="&quot;Inserisci il voto orale&quot;" newline="True"/>
+            <input variable="votoOrale"/>
+            <while expression="votoOrale &gt; 10 or votoOrale &lt; 1">
+                <output expression="&quot;Voto non corretto&quot;" newline="True"/>
+                <output expression="&quot;Il voto deve essere compreso tra 1 e 10&quot;" newline="True"/>
+                <input variable="votoOrale"/>
+            </while>
+            <output expression="&quot;Inserisci il voto pratico&quot;" newline="True"/>
+            <input variable="votoPratico"/>
+            <while expression="votoPratico &gt; 10 or votoPratico &lt; 1">
+                <output expression="&quot;Voto non corretto&quot;" newline="True"/>
+                <output expression="&quot;Il voto deve essere compreso tra 1 e 10&quot;" newline="True"/>
+                <input variable="votoPratico"/>
+            </while>
+            <assign variable="media" expression="(votoScritto + votoOrale + votoPratico) / 3"/>
+            <if expression="media &lt; 6">
+                <then>
+                    <output expression="&quot;La media di Informatica &#232; &quot; &amp; media" newline="True"/>
+                    <output expression="&quot;Il voto &#232; insufficente&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;La media di Informatica &#232; &quot; &amp; media" newline="True"/>
+                    <output expression="&quot;Il voto &#232; sufficente&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

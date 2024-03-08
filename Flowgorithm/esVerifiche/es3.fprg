@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="utente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-17 09:53:33 "/>
+        <attribute name="created" value="dXRlbnRlO1NURU1QU0E7MjAyMy0xMC0xNzsiMDk6MzQ6MTIgIjsyMzky"/>
+        <attribute name="edited" value="dXRlbnRlO1NURU1QU0E7MjAyMy0xMC0xNzsiMDk6NTM6MzMgIjs1OzI1MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Elia Morari 3AI"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <for variable="n" start="100" end="200" direction="inc" step="2">
+                <if expression="n == 100 || n == 200">
+                    <then>
+                        <output expression="&quot;Il primo numero pari (da 100 a 200) &#232; &quot; &amp; n" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="n == 200">
+                            <then>
+                                <output expression="&quot;L'ultimo numero pari (da 100 a 200) &#232; &quot; &amp; n" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Il numero pari seguente &#232; &quot; &amp; n" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

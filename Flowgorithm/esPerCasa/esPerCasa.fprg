@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 08:42:13 "/>
+        <attribute name="created" value="U3R1ZGVudGU7U1RFTVNQQS0yNDsyMDIzLTA5LTI2OyIxMDoxNTo0NCAiOzI3MjY="/>
+        <attribute name="edited" value="U3R1ZGVudGU7U1RFTVNQQS0yNDsyMDIzLTA5LTI2OyIxMDoyNDoyMSAiOzE7MjgyOQ=="/>
+        <attribute name="edited" value="VXNlcjtBTElFTi1QQzsyMDIzLTEwLTAyOyIwODoxMTo1MyAiOzQ7MjI2Mg=="/>
+        <attribute name="edited" value="dXRlbnRlO1NURU1TUEEtMTQ7MjAyMy0xMC0wMzsiMDg6NDI6MTMgIjszOzI2NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ordine" type="String" array="False" size=""/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="end" type="String" array="False" size=""/>
+            <assign variable="end" expression="&quot;true&quot;"/>
+            <while expression="end = &quot;si&quot; OR end = &quot;yes&quot; OR end = &quot;true&quot; OR end = &quot;y&quot; OR end = &quot;Y&quot;">
+                <output expression="&quot;Con quale ordine vuoi che vengano visualizzati i due numeri? (possibili scelte: decrescente, crescente)&quot;" newline="True"/>
+                <input variable="ordine"/>
+                <while expression="!(ordine = &quot;decrescente&quot; OR ordine = &quot;crescente&quot;)">
+                    <output expression="&quot;non esiste questo ordine!&quot;" newline="True"/>
+                    <output expression="&quot;Reinserisci l'ordine (decrescente, crescente)&quot;" newline="True"/>
+                    <input variable="ordine"/>
+                </while>
+                <output expression="&quot;Inserisci il primo valore&quot;" newline="True"/>
+                <input variable="a"/>
+                <output expression="&quot;Inserisci il secondo valore&quot;" newline="True"/>
+                <input variable="b"/>
+                <while expression="b = a">
+                    <output expression="&quot;il secondo numero &#232; uguale al primo&quot;" newline="True"/>
+                    <output expression="&quot;Reinscerisci il secondo numero&quot;" newline="True"/>
+                    <input variable="b"/>
+                </while>
+                <if expression="ordine == &quot;crescente&quot;">
+                    <then>
+                        <output expression="&quot;I numeri in oridne crescente sono &quot;" newline="True"/>
+                        <if expression="(a-b) &gt;= 0">
+                            <then>
+                                <output expression="b &amp; &quot;; &quot; &amp; a" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="a &amp; &quot;; &quot; &amp; b" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;I numeri in oridne decrescente sono &quot;" newline="True"/>
+                        <if expression="(a-b) &gt;= 0">
+                            <then>
+                                <output expression="a &amp; &quot;; &quot; &amp; b" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="b &amp; &quot;; &quot; &amp; a" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Vuoi continuare ad eseguire il programma? (Y/N)&quot;" newline="True"/>
+                <input variable="end"/>
+                <while expression="!(end = &quot;no&quot; OR end = &quot;false&quot; OR end = &quot;si&quot; OR end = &quot;yes&quot; OR end = &quot;true&quot; OR end = &quot;Y&quot; OR end = &quot;y&quot;)">
+                    <output expression="&quot;Non esiste questa risposta per favore risponda con 'si' o 'no'&quot;" newline="True"/>
+                    <input variable="end"/>
+                </while>
+            </while>
+            <output expression="&quot;Arrivederci!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

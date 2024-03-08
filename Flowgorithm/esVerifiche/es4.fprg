@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="utente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-17 09:57:19 "/>
+        <attribute name="created" value="dXRlbnRlO1NURU1QU0E7MjAyMy0xMC0xNzsiMDk6MzU6NDYgIjsyNDAw"/>
+        <attribute name="edited" value="dXRlbnRlO1NURU1QU0E7MjAyMy0xMC0xNzsiMDk6NTc6MTkgIjszOzI1MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Elia Morari 3AI"/>
+            <declare name="dado" type="Integer" array="False" size=""/>
+            <declare name="cont" type="Integer" array="False" size=""/>
+            <assign variable="cont" expression="0"/>
+            <do expression="dado != 6">
+                <assign variable="cont" expression="cont + 1"/>
+                <assign variable="dado" expression="Random(7)"/>
+                <while expression="dado == 0">
+                    <assign variable="dado" expression="Random(7)"/>
+                </while>
+                <if expression="cont == 1">
+                    <then>
+                        <output expression="&quot;Il primo lancio ha fatto unscire il numero &quot; &amp; dado" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="dado == 6">
+                            <then/>
+                            <else>
+                                <output expression="&quot;Il lancio ha fatto unscire il numero &quot; &amp; dado" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;Il dado &#232; stato lanciato &quot; &amp; cont &amp; &quot; volte per far uscire il numero 6&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

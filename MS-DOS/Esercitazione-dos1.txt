@@ -1,0 +1,42 @@
+C:\Users\Studente\Desktop\prova>mkdir a\b\c\d\e
+
+C:\Users\Studente\Desktop\prova>cd a\b\c
+
+C:\Users\Studente\Desktop\prova\a\b\c>type nul>astro.txt
+
+C:\Users\Studente\Desktop\prova\a\b\c>cd d\e
+
+C:\Users\Studente\Desktop\prova\a\b\c\d\e>echo Morari Elia 3AI %DATE%>nastro.txt
+
+C:\Users\Studente\Desktop\prova\a\b\c\d\e>copy nastro.txt ..\..\..\..\
+        1 file copiati.
+
+C:\Users\Studente\Desktop\prova\a\b\c\d\e>cls
+
+C:\Users\Studente\Desktop\prova\a\b\c\d\e>cd ..\..\..\..\..\
+
+C:\Users\Studente\Desktop\prova>tree
+Elenco del percorso delle cartelle per il volume Dati
+Numero di serie del volume: C4A9-751E
+C:.
+└───a
+    └───b
+        └───c
+            └───d
+                └───e
+
+C:\Users\Studente\Desktop\prova>comp a\nastro.txt a\b\c\astro.txt
+Confronto di a\nastro.txt e a\b\c\astro.txt in corso...
+I file hanno dimensioni diverse.
+
+Confrontare altri file (S/N) ? N
+
+C:\Users\Studente\Desktop\prova>del /s a\b\
+File eliminato - B:\Alien\Desktop\Dev\School-projects\MS-DOS\prova\a\b\c\astro.txt
+File eliminato - B:\Alien\Desktop\Dev\School-projects\MS-DOS\prova\a\b\c\d\e\nastro.txt
+
+C:\Users\Studente\Desktop\prova>rmdir /s a\b\c
+
+C:\Users\Studente\Desktop\prova>mv a\nastro.txt a\new_nastro.txt
+        1 file spostato/i.
+

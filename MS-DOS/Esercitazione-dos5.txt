@@ -1,0 +1,28 @@
+
+C:\Esercizi-dos>DATE
+Data corrente: 03/02/2024
+Immettere la nuova data: (gg-mm-aa)
+
+C:\Esercizi-dos>echo Data corrente: 03/02/2024> Data.txt
+
+C:\Esercizi-dos>TIME
+Ora corrente: 14:33:47,93
+Immettere nuova ora:
+
+C:\Esercizi-dos>echo Ora corrente: 14:33:47,93> Ora.txt
+
+C:\Esercizi-dos>echo Morari Elia> Nome.txt
+
+C:\Esercizi-dos>copy Data.txt + Ora.txt + Nome.txt Relazione.txt
+Data.txt
+Ora.txt
+Nome.txt
+        1 file copiati.
+
+C:\Esercizi-dos>mkdir MS-DOS
+
+C:\Esercizi-dos>copy Relazione.txt MS-DOS\Intestazione.txt
+        1 file copiati.
+
+C:\Esercizi-dos>move Relazione.txt MS-DOS
+        1 file spostato/i.
